@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Tetede | Data Analyst Portfolio</title>
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Tailwind CSS via CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for a professional look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 bg-white shadow-lg p-4 md:p-6 rounded-b-xl">
+        <div class="container mx-auto flex justify-between items-center flex-wrap">
+            <a href="#" class="text-2xl font-bold text-indigo-600">Kevin Tetede</a>
+            <div class="md:hidden">
+                <button id="menu-button" class="text-gray-600 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <div id="nav-links" class="hidden md:flex md:items-center w-full md:w-auto mt-4 md:mt-0">
+                <a href="#about" class="nav-link block py-2 px-4 md:inline-block md:px-3 text-gray-600 hover:text-indigo-600 rounded-md">About</a>
+                <a href="#skills" class="nav-link block py-2 px-4 md:inline-block md:px-3 text-gray-600 hover:text-indigo-600 rounded-md">Skills</a>
+                <a href="#projects" class="nav-link block py-2 px-4 md:inline-block md:px-3 text-gray-600 hover:text-indigo-600 rounded-md">Projects</a>
+                <a href="#contact" class="nav-link block py-2 px-4 md:inline-block md:px-3 text-gray-600 hover:text-indigo-600 rounded-md">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero-bg py-20 px-4 text-white text-center rounded-xl mx-4 mt-8">
+        <div class="container mx-auto">
+            <!-- Professional Headshot -->
+            <!-- FIX: Added w-40 h-40 and object-cover to resize the image -->
+            <img src="./images/kevin-tetede.jpg" alt="Kevin Tetede Headshot" class="w-40 h-40 object-cover rounded-full mx-auto border-4 border-white mb-6 transform transition-transform duration-300 hover:scale-105">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-2 leading-tight">Kevin Tetede</h1>
+            <p class="text-2xl font-light opacity-90 mb-6">Data Analyst</p>
+            <p class="max-w-xl mx-auto text-lg font-light mb-8">
+                Transforming raw data into strategic insights that drive business growth.
+            </p>
+            <!-- Social and Resume Icons -->
+            <div class="flex justify-center space-x-6 text-2xl mb-8">
+                <a href="https://www.linkedin.com/in/kevintetede" target="_blank" class="transition-transform duration-300 hover:scale-125 hover:text-gray-200" aria-label="LinkedIn Profile">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/kevintetede" target="_blank" class="transition-transform duration-300 hover:scale-125 hover:text-gray-200" aria-label="GitHub Profile">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:kevin.tetede@gmail.com" class="transition-transform duration-300 hover:scale-125 hover:text-gray-200" aria-label="Email Address">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <!-- More prominent Download Resume Button -->
+            <!-- IMPORTANT: Replace the href with the actual URL to your resume file. -->
+            <!-- Example: href="https://github.com/your-username/your-repo/raw/main/resume/your-resume-file.pdf" -->
+            <a href="https://github.com/ted-kev-dorg/your-repo/raw/main/resume/your-resume.pdf" target="_blank" class="bg-white text-indigo-600 px-8 py-3 rounded-full text-lg font-bold shadow-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 inline-flex items-center space-x-2" aria-label="Download Resume">
+                <i class="fas fa-file-arrow-down"></i>
+                <span>Download Resume</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+
+        <!-- About Me Section -->
+        <section id="about" class="bg-white p-8 md:p-12 rounded-xl shadow-lg mb-12">
+            <h2 class="section-header text-center mb-6">About Me</h2>
+            <div class="prose max-w-none text-gray-600 text-lg leading-relaxed">
+                <p>Hello! I'm Kevin, a passionate data analyst with a knack for turning complex datasets into clear, actionable stories. My journey began with a curiosity for how businesses make decisions, and I've since honed my skills in a full-stack data workflow, from cleaning and preparing raw data to building compelling visualizations that inform strategy.</p>
+                <p>I thrive on problem-solving and believe that data, when properly analyzed, is one of the most powerful assets a company can have. I'm proficient in a variety of tools and always eager to learn new technologies to stay at the forefront of the industry. I am currently seeking new opportunities where I can apply my skills to solve meaningful business challenges and contribute to a data-driven culture.</p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="bg-white p-8 md:p-12 rounded-xl shadow-lg mb-12">
+            <h2 class="section-header text-center mb-8">Skills</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Skills Category 1 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-inner">
+                    <h3 class="text-xl font-bold mb-4 text-indigo-600">Languages & Concepts</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center"><i class="fas fa-database text-indigo-400 mr-2"></i> SQL</li>
+                        <li class="flex items-center"><i class="fab fa-python text-indigo-400 mr-2"></i> Python</li>
+                        <li class="flex items-center"><i class="fas fa-chart-line text-indigo-400 mr-2"></i> Statistical Analysis</li>
+                        <li class="flex items-center"><i class="fas fa-flask text-indigo-400 mr-2"></i> A/B Testing</li>
+                    </ul>
+                </div>
+                <!-- Skills Category 2 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-inner">
+                    <h3 class="text-xl font-bold mb-4 text-indigo-600">Libraries & Frameworks</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center"><i class="fas fa-cogs text-indigo-400 mr-2"></i> Pandas & NumPy</li>
+                        <li class="flex items-center"><i class="fas fa-chart-bar text-indigo-400 mr-2"></i> Matplotlib & Seaborn</li>
+                        <li class="flex items-center"><i class="fas fa-microscope text-indigo-400 mr-2"></i> Scikit-learn</li>
+                        <li class="flex items-center"><i class="fas fa-globe text-indigo-400 mr-2"></i> GeoPandas</li>
+                    </ul>
+                </div>
+                <!-- Skills Category 3 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-inner">
+                    <h3 class="text-xl font-bold mb-4 text-indigo-600">Tools & Platforms</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center"><i class="fas fa-table text-indigo-400 mr-2"></i> Tableau</li>
+                        <li class="flex items-center"><i class="fas fa-chart-pie text-indigo-400 mr-2"></i> Power BI</li>
+                        <li class="flex items-center"><i class="fas fa-file-excel text-indigo-400 mr-2"></i> Excel</li>
+                        <li class="flex items-center"><i class="fas fa-server text-indigo-400 mr-2"></i> SQL Server / PostgreSQL</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Gallery Section with Lightbox -->
+        <section id="projects" class="bg-white p-8 md:p-12 rounded-xl shadow-lg mb-12">
+            <h2 class="section-header text-center mb-8">Projects</h2>
+            <!-- Updated class to use the scale-pulse animation for a grow/shrink effect -->
+            <p class="animate-scale-pulse text-center text-lg text-black-600 mb-8">
+                Click on any project to view a detailed summary and a larger image.
+            </p>
+
+            <!-- Gallery Grid (will be populated dynamically by JavaScript) -->
+            <div id="projects-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project cards will be injected here by script.js -->
+            </div>
+        </section>
+
+        <!-- Lightbox Modal -->
+        <div id="lightbox" class="lightbox-modal">
+            <span class="close-btn">&times;</span>
+            <div class="lightbox-content">
+                <!-- Image container with navigation buttons -->
+                <div class="lightbox-image-container">
+                    <img id="lightbox-image" class="lightbox-image" src="" alt="">
+                    <!-- Lightbox Navigation -->
+                    <div id="lightbox-nav" class="lightbox-nav">
+                        <button id="prev-btn" class="nav-btn">&lsaquo;</button>
+                        <button id="next-btn" class="nav-btn">&rsaquo;</button>
+                    </div>
+                </div>
+
+                <!-- Image counter and thumbnails -->
+                <div class="flex flex-col items-center">
+                    <div id="image-counter" class="text-sm text-gray-500 mb-2"></div>
+                    <div id="thumbnail-gallery" class="flex justify-center flex-wrap gap-2"></div>
+                </div>
+
+                <div class="p-4">
+                    <h3 id="lightbox-title" class="text-2xl font-bold mb-2"></h3>
+                    <!-- Updated section for description with a heading and an ID for the list -->
+                    <h4 class="text-lg font-bold text-gray-800 mb-2">Project Details</h4>
+                    <div id="lightbox-description" class="text-gray-600"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-white p-8 md:p-12 rounded-xl shadow-lg">
+            <h2 class="section-header text-center mb-8">Let's Connect</h2>
+            <div class="text-center text-lg text-gray-600 space-y-4">
+                <p>I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+                <div class="flex flex-col items-center">
+                    <div class="flex items-center space-x-2 mb-2">
+                        <i class="fas fa-envelope text-indigo-500"></i>
+                        <a href="mailto:kevin.tetede@gmail.com" class="text-indigo-600 hover:underline">kevin.tetede@gmail.com</a>
+                    </div>
+                    <div class="flex items-center space-x-4 text-2xl">
+                         <a href="https://www.linkedin.com/in/kevintetede" target="_blank" class="transition-transform duration-300 hover:scale-125 hover:text-indigo-600" aria-label="LinkedIn Profile">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/kevintetede" target="_blank" class="transition-transform duration-300 hover:scale-125 hover:text-indigo-600" aria-label="GitHub Profile">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-6 mt-12 rounded-t-xl">
+        <p class="text-sm">&copy; 2024 Kevin Tetede. All rights reserved.</p>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
